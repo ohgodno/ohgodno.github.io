@@ -41,6 +41,10 @@ h3 {
     display: inherit;
 }
 
+section.content {
+    padding: 2rem;
+}
+
 /* Navigation */
 .navbar-brand {
     font-size: 2rem !important;
@@ -83,21 +87,17 @@ h3 {
 
 /* Home Page */
 .jumbotron {
-    margin-bottom: 0 !important;
-}
-
-.about-blurb h2, .about-blurb p {
-    text-align: left !important;
-    padding-left: 0 !important;
-}
-
-main .jumbotron {
     padding: 3%;
     margin-top: 14px;
+    margin-bottom: 0 !important;
 }
-
 .jumbotron h1 {
     text-align: center;
+}
+
+.about h2, .about p {
+    text-align: left !important;
+    padding-left: 0 !important;
 }
 
 .courselist .courses {
@@ -216,6 +216,12 @@ main p {
     height: 40px;
 }
 
+/* Work Page */
+
+.experience .location {
+    font-size: 1rem;
+    line-height: 1;
+}
 
 /* Footer */
 footer.footer {
@@ -240,6 +246,10 @@ footer .footer-flex {
 
     .desktop-only {
         display: inherit !important;
+    }
+
+    span.desktop-only, br.desktop-only {
+        display: inline !important;
     }
 
     .mobile-only {
