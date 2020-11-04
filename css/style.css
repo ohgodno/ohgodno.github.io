@@ -82,6 +82,13 @@ header {
     min-height: 60px;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: Montserrat, initial, serif;
+}
+
+body p {
+    font-family: Lato, initial, serif;
+}
 .nav_links {
     display: flex;
     flex-direction: column;
