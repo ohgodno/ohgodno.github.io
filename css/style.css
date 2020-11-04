@@ -49,11 +49,13 @@ h2 {
 }
 
 main .jumbotron {
-    padding: 5%
+    padding: 3%;
+    margin-top: 14px;
 }
 
 main {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
+    z-index: 5;
 }
 
 footer.footer {
@@ -75,21 +77,6 @@ footer .footer-flex {
     color: #343a40;
 }
 
-/* Gallery! */
-.gallery {
-    min-height:      600px;
-    display:         flex;
-    flex-wrap:       wrap;
-    justify-content: center;
-    align-items:     center;
-}
-
-.gallery > img {
-    border: 10px #50C7C7 solid;
-    margin: 10px;
-    width:  300px;
-}
-
 /* Navbar */
 header {
     display:        flex;
@@ -97,6 +84,7 @@ header {
     background:     #fff;
     border-bottom:  3px solid #50C7C7;
     align-items:    center;
+    min-height: 60px;
 }
 
 .nav_links {
@@ -125,34 +113,14 @@ header {
     footer .footer-flex {
         flex-direction: row;
     }
+    main .jumbotron {
+        padding: 5%
+    }
 }
 
 @media print {
-    body {
-        background-image: none;
-    }
 
-    .card {
-        flex-basis:     200px;
-        flex-direction: row;
-    }
-
-    .pricing {
-        align-items: flex-start;
-    }
-
-    .gallery, #gallery {
-        display: none;
-    }
-
-    .nav_links {
-        flex-direction: column;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    #logo {
-        -webkit-animation: none;
-        animation: none;
-    }
 }
