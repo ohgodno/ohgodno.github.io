@@ -62,10 +62,12 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    font-family: Lato, sans-serif;
 }
 
 .courselist .courses .course {
     flex: 1;
+    margin-top: 10px;
     /*border: 1px lightgray solid;*/
     /*border-radius: 10px;*/
 }
@@ -153,6 +155,19 @@ h3 {
 .mobile-only {
     display: block;
 }
+
+br.desktop-only {
+    display: none;
+}
+
+.coursename {
+    margin-right: 5px;
+}
+
+.spacer {
+    margin-top: 40px;
+}
+
 main p {
     font-family: 'Lato', sans-serif !important;
     font-weight: 300;
@@ -183,6 +198,9 @@ main p {
     .desktop-only {
         display: block !important;
     }
+    br.desktop-only {
+        display: inline !important;
+    }
 
     .mobile-only {
         display: none !important;
@@ -198,6 +216,13 @@ main p {
 
     .courselist .courses {
         flex-direction: row;
+        margin-top: 10px;
+    }
+
+    .courselist .courses .course {
+        margin-top: 10px;
+        /*border: 1px lightgray solid;*/
+        /*border-radius: 10px;*/
     }
 
 }
