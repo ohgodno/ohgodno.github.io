@@ -1,0 +1,158 @@
+body {
+    font-family: 'Raleway', sans-serif; /* Test for this*/
+    margin: 0;
+    padding: 0;
+    font-size: 16pt; /* test for this! Make all sizes em or rem */
+    background-color: #fafafa;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    line-height: 2;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+}
+
+.navbar-brand {
+    font-size: 2rem !important;
+}
+
+.jumbotron {
+     margin-bottom: 0 !important;
+}
+
+.about-blurb h2, .about-blurb p {
+    text-align: left !important;
+    padding-left: 0 !important;
+}
+
+.skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+}
+
+.skip a:focus {
+    top: 20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+main .jumbotron {
+    padding: 5%
+}
+
+main {
+    margin-top: 60px;
+}
+
+footer.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
+
+footer .footer-flex {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.fab {
+    color: #343a40;
+}
+
+/* Gallery! */
+.gallery {
+    min-height:      600px;
+    display:         flex;
+    flex-wrap:       wrap;
+    justify-content: center;
+    align-items:     center;
+}
+
+.gallery > img {
+    border: 10px #50C7C7 solid;
+    margin: 10px;
+    width:  300px;
+}
+
+/* Navbar */
+header {
+    display:        flex;
+    flex-direction: column;
+    background:     #fff;
+    border-bottom:  3px solid #50C7C7;
+    align-items:    center;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.nav_item a {
+    color:           black;
+    text-decoration: none;
+}
+
+.nav_item a:hover, a:focus {
+    color: #50C7C7;
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+}
+
+@media screen and (min-width: 850px) {
+    nav {
+        max-height: 60px;
+    }
+
+    footer .footer-flex {
+        flex-direction: row;
+    }
+}
+
+@media print {
+    body {
+        background-image: none;
+    }
+
+    .card {
+        flex-basis:     200px;
+        flex-direction: row;
+    }
+
+    .pricing {
+        align-items: flex-start;
+    }
+
+    .gallery, #gallery {
+        display: none;
+    }
+
+    .nav_links {
+        flex-direction: column;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #logo {
+        -webkit-animation: none;
+        animation: none;
+    }
+}
