@@ -110,7 +110,7 @@ nav {
     left: 0;
     padding: 6px;
     position: absolute;
-    top: -25px;
+    top: -999px;
     -webkit-transition: top 0.25s ease-out;
     transition: top 0.25s ease-out;
     z-index: 999;
