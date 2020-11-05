@@ -77,7 +77,7 @@ nav {
 
 .navbar-brand {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     font-weight: 300;
 }
 
@@ -332,6 +332,11 @@ footer .footer-flex {
     nav {
         height: 60px;
     }
+    .navbar-brand {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem !important;
+        font-weight: 300;
+    }
 
     .desktop-only {
         display: inherit !important;
@@ -366,6 +371,7 @@ footer .footer-flex {
         text-align: left;
         margin-top: 0 !important;
     }
+
 }
 
 @media print {
