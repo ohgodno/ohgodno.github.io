@@ -29,13 +29,16 @@ h2 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 500 !important;
 }
-
+h4 {
+    font-size: 1.3rem;
+    font-weight: 300 !important;
+}
 main p {
     font-family: 'Lato', sans-serif !important;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .desktop-only {
@@ -84,7 +87,7 @@ nav {
 .navbar-brand {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25em !important;
-    font-weight: 300;
+    font-weight: 400;
     transition: all 0.25s ease-in;
 }
 
@@ -155,6 +158,9 @@ nav {
     flex-direction: column;
     margin-top: 20px;
     font-family: Lato, sans-serif;
+}
+h4.course {
+    font-weight: 700 !important;
 }
 
 .tablet-only {
@@ -348,14 +354,28 @@ footer .footer-flex {
     color: #343a40;
 }
 
+
+
+/* Extra Large Desktop Devices >1620px */
+@media screen and (min-width: 1620px) {
+    .tablet-only {
+        display: none !important;
+    }
+    .course {
+        padding-right: 5px;
+    }
+    .courselist .courses .course {
+        padding-right: 0;
+    }
+}
+
+/* Normal Desktops 992->-1620px-> */
 @media screen and (min-width: 992px) {
     nav {
         height: 60px;
     }
     .navbar-brand {
-        font-family: 'Montserrat', sans-serif;
         font-size: 1.5em !important;
-        font-weight: 300;
     }
 
     .desktop-only {
@@ -399,18 +419,7 @@ footer .footer-flex {
 
 }
 
-@media screen and (min-width: 1620px) {
-    .tablet-only {
-        display: none !important;
-    }
-    .course {
-        padding-right: 5px;
-    }
-    .courselist .courses .course {
-        padding-right: 0;
-    }
-}
-
+/* Small Devices 340-576px */
 @media screen and (max-width: 576px) {
     .tablet-only {
         display: none;
@@ -429,6 +438,7 @@ footer .footer-flex {
     }
 }
 
+/* Extra Small Devices <340px */
 @media screen and (max-width: 340px) {
     header {
         min-height: 54px;
