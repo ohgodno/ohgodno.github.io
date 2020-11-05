@@ -1,3 +1,5 @@
+// Code from:
+// https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server
 (function() {
   // get all data in form and return object
   function getFormData(form) {
@@ -38,6 +40,8 @@
         }
         formData[name] = data.join(', ');
       }
+
+      // Modified to add localized timestamp
       formData["timestamp"] = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
     });
 
@@ -57,6 +61,7 @@
     var data = formData.data;
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
+    // modified the honeypot
     if (formData.honeypot) {
       return false;
     }
@@ -70,6 +75,7 @@
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
+          // modified the POST-send behaviour to say Thanks for reaching out!
           document.querySelector('.gform').style.display = "none";
           var thankYouMessage = document.querySelector(".thankyou_message");
           if (thankYouMessage) {
