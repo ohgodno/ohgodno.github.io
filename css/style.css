@@ -332,9 +332,18 @@ footer .footer-flex {
 }
 
 @media print {
+    .skip {
+        display: none;
+    }
 
+    footer {
+        display: none;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
-
+    main section {
+        transition: none;
+        opacity: 1 !important;
+    }
 }
