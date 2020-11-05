@@ -352,12 +352,14 @@ br.desktop-only {
     font-size: 10px;
     font-weight: 700;
     background-color: #fff;
-    color: #006CE0 !important;
     border-radius: 5px;
     padding: 2px 5px;
     margin-bottom: 0 !important;
 }
 
+.contact.jumbotron .attribution a {
+    color: #006CE0 !important;
+}
 
 .contact-form {
     margin-top: 40px;
