@@ -64,18 +64,18 @@ main section {
 /* Over  */
 .badge-primary, .btn-primary {
     color: #fff;
-    background-color: #0071EB !important;
+    background-color: #006CE0 !important;
 }
 
 .btn-outline-primary {
-    color: #0071EB !important;
-    border-color: #0071EB !important;
+    color: #006CE0 !important;
+    border-color: #006CE0 !important;
 }
 
 .btn-outline-primary:hover {
     color: #fff !important;
-    background-color: #0071EB !important;
-    border-color: #0071EB !important;
+    background-color: #006CE0 !important;
+    border-color: #006CE0 !important;
 }
 
 .badge-info {
@@ -423,7 +423,7 @@ br.desktop-only {
 }
 
 .flip-card-back {
-    background-color: #0071EB;
+    background-color: #006CE0;
     color: white;
     transform: rotateY(180deg);
 }
