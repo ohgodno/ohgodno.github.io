@@ -41,7 +41,7 @@ main p {
     font-weight: 300;
 }
 
-main a {
+main a, .attribution {
     color: #0071EB !important;
 }
 
@@ -62,7 +62,7 @@ main section {
 }
 
 /* Over  */
-.badge-primary {
+.badge-primary, .btn-primary {
     color: #fff;
     background-color: #0071EB !important;
 }
