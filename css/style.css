@@ -71,6 +71,10 @@ main section:nth-child(4) {
 
 
 /* Navigation */
+nav {
+    box-shadow: 0 2px 3px -2px rgba(0,0,0,.25);
+}
+
 .navbar-brand {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem !important;
@@ -212,6 +216,7 @@ main p {
 
 .projects figcaption {
     width: 100%;
+    border-top: 2px solid lightgray;
 }
 
 .projects figcaption h3 {
@@ -251,6 +256,20 @@ main p {
 .contact-form {
     margin-top: 40px;
     text-align: left;
+}
+
+.mapouter{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.mapouter iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 /* Footer */
