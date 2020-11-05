@@ -78,6 +78,7 @@ nav {
 .navbar-brand {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem !important;
+    font-weight: 300;
 }
 
 .nav_links {
