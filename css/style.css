@@ -33,6 +33,11 @@ h3 {
     font-weight: 500 !important;
 }
 
+main p {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300;
+}
+
 .desktop-only {
     display: none;
 }
@@ -139,6 +144,11 @@ nav {
     padding-left: 0 !important;
 }
 
+.courses-flex {
+    max-width: 85%;
+    margin-bottom: 40px;
+}
+
 .courselist .courses {
     width: 100%;
     display: flex;
@@ -147,9 +157,17 @@ nav {
     font-family: Lato, sans-serif;
 }
 
+.tablet-only {
+    display: none;
+}
+
 .courselist .courses .course {
     flex: 1;
     margin-top: 10px;
+}
+
+.course .badge {
+    width: 100px;
 }
 
 h4.course {
@@ -174,9 +192,8 @@ br.desktop-only {
     margin-top: 40px;
 }
 
-main p {
-    font-family: 'Lato', sans-serif !important;
-    font-weight: 300;
+.about-blurb {
+    padding-bottom: 1rem !important;
 }
 
 
@@ -375,6 +392,15 @@ footer .footer-flex {
         margin-top: 0 !important;
     }
 
+}
+
+@media screen and (max-width: 1620px) and (min-width: 992px) {
+    .tablet-only {
+        display: inherit;
+    }
+    .course {
+        padding-right: 5px;
+    }
 }
 
 @media print {
