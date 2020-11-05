@@ -237,7 +237,7 @@ footer .footer-flex {
     text-align: center;
 }
 
-.fab {
+.fab, .fas {
     color: #343a40;
 }
 
