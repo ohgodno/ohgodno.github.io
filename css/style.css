@@ -79,6 +79,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem !important;
     font-weight: 300;
+    transition: all 0.25s ease-in;
 }
 
 .nav_links {
@@ -125,7 +126,7 @@ nav {
 /* Home Page */
 .jumbotron {
     padding: 3%;
-    margin-top: 14px;
+    margin-top: 3px;
     margin-bottom: 0 !important;
 }
 .jumbotron h1 {
