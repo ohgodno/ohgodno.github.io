@@ -1,5 +1,4 @@
 /* Page Setup */
-
 body {
     font-family: 'Raleway', sans-serif; /* Test for this*/
     margin: 0;
@@ -30,6 +29,7 @@ h2 {
 }
 
 h3 {
+    font-size: 1rem;
     font-weight: 500 !important;
 }
 
@@ -47,6 +47,7 @@ section.content {
 
 /* Navigation */
 .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
     font-size: 2rem !important;
 }
 
@@ -62,10 +63,16 @@ section.content {
 }
 
 .nav_item a:hover, a:focus {
-    color: #50C7C7;
+    color: #385fc3;
     text-decoration: underline;
     -webkit-text-decoration-style: dotted;
     text-decoration-style: dotted;
+}
+.nav-link {
+    font-family: 'Lato', sans-serif;
+}
+.nav-item.active a.nav-link {
+    font-weight: 700;
 }
 
 .skip a {
@@ -111,17 +118,10 @@ section.content {
 .courselist .courses .course {
     flex: 1;
     margin-top: 10px;
-    /*border: 1px lightgray solid;*/
-    /*border-radius: 10px;*/
 }
 
 h4.course {
     font-weight: 700;
-}
-
-
-.fab {
-    color: #343a40;
 }
 
 .lead {
@@ -148,13 +148,12 @@ main p {
 }
 
 
-
 /* Projects Page */
 .projects {
     padding: 2rem;
 }
 
-.projects > ul {
+.projects ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
@@ -236,6 +235,10 @@ footer .footer-flex {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+}
+
+.fab {
+    color: #343a40;
 }
 
 @media screen and (min-width: 992px) {
