@@ -41,6 +41,10 @@ main p {
     font-weight: 300;
 }
 
+main a {
+    color: #0071EB
+}
+
 .desktop-only {
     display: none;
 }
@@ -57,9 +61,21 @@ main section {
     opacity: 0;
 }
 
+/* Over  */
 .badge-primary {
     color: #fff;
     background-color: #0071EB !important;
+}
+
+.btn-outline-primary {
+    color: #0071EB !important;
+    border-color: #0071EB !important;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #0071EB !important;
+    border-color: #0071EB !important;
 }
 
 /* Footer */
@@ -104,6 +120,23 @@ main section:nth-child(4) {
     animation-delay: 2s;
 }
 
+.skip a {
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -999px;
+    color: #0071EB !important;
+    -webkit-transition: top 0.25s ease-out;
+    transition: top 0.25s ease-out;
+    z-index: 999;
+}
+
+.skip a:focus {
+    top: 60px;
+    color: black;
+    text-decoration-style: solid;
+}
 
 /* Navigation */
 nav {
@@ -144,23 +177,6 @@ nav {
 
 .nav-item.active a.nav-link {
     font-weight: 700;
-}
-
-.skip a {
-    background: white;
-    left: 0;
-    padding: 6px;
-    position: absolute;
-    top: -999px;
-    -webkit-transition: top 0.25s ease-out;
-    transition: top 0.25s ease-out;
-    z-index: 999;
-}
-
-.skip a:focus {
-    top: 60px;
-    color: black;
-    text-decoration-style: solid;
 }
 
 /* Home Page */
@@ -400,7 +416,7 @@ br.desktop-only {
 }
 
 .flip-card-back {
-    background-color: #007bff;
+    background-color: #0071EB;
     color: white;
     transform: rotateY(180deg);
 }
