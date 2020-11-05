@@ -42,7 +42,7 @@ main p {
 }
 
 main a {
-    color: #0071EB
+    color: #0071EB !important;
 }
 
 .desktop-only {
@@ -76,6 +76,10 @@ main section {
     color: #fff !important;
     background-color: #0071EB !important;
     border-color: #0071EB !important;
+}
+
+.badge-info {
+    background-color: #128091 !important;
 }
 
 /* Footer */
