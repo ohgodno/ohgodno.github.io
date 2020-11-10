@@ -164,13 +164,6 @@ nav {
     color:           black;
     text-decoration: none;
 }
-
-.nav_item a:hover, a:focus {
-    color: #385fc3;
-    text-decoration: underline;
-    -webkit-text-decoration-style: dotted;
-    text-decoration-style: dotted;
-}
 .nav-link {
     font-family: 'Lato', sans-serif;
 }
@@ -181,6 +174,7 @@ nav {
 
 .nav-item.active a.nav-link {
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* Home Page */
