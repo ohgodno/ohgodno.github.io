@@ -1,5 +1,6 @@
 // Code from:
 // https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server
+// Modified by Harrison Crandall
 (function() {
   // get all data in form and return object
   function getFormData(form) {
@@ -48,20 +49,19 @@
     // add form-specific values into the data
     formData.formDataNameOrder = JSON.stringify(fields);
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
-    formData.formGoogleSendEmail
-      = form.dataset.email || ""; // no email by default
+    formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
     return {data: formData, honeypot: honeypot};
   }
 
   function handleFormSubmit(event) {  // handles form submit without any jquery
-    event.preventDefault();           // we are submitting via xhr below
+    event.preventDefault();
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
-    // modified the honeypot
+    // EDIT: I modified the honeypot to catch other scrapers
     if (formData.honeypot) {
       return false;
     }
@@ -70,12 +70,11 @@
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
-    // xhr.withCredentials = true;
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
           form.reset();
-          // modified the POST-send behaviour to say Thanks for reaching out!
+          // EDIT: I modified the POST-send behaviour to say Thanks for reaching out!
           document.querySelector('.gform').style.display = "none";
           var thankYouMessage = document.querySelector(".thankyou_message");
           if (thankYouMessage) {
