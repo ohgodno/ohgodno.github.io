@@ -56,9 +56,11 @@
 
   function handleFormSubmit(event) {  // handles form submit without any jquery
     event.preventDefault();
+    $('.contact-form button').toggleClass('clicked');
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
+
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
     // EDIT: I modified the honeypot to catch other scrapers

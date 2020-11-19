@@ -403,6 +403,26 @@ br.desktop-only {
     text-align: left !important;
 }
 
+.contact-form button img {
+    position: relative;
+    padding-left: 5px;
+}
+
+.contact-form button:hover img {
+    -webkit-animation: sendIMG 0.25s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation: hoverIMG 0.25s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.contact-form button.clicked img {
+    -webkit-animation: sendIMG 2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation: sendIMG 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
 .mapouter{
     overflow:hidden;
     padding-bottom:56.25%;
@@ -567,5 +587,35 @@ br.desktop-only {
     main section {
         transition: none;
         opacity: 1 !important;
+    }
+}
+
+@keyframes hoverIMG {
+    0% {
+        -webkit-transform: translate(0, 0) rotate(0deg);
+        transform:         translate(0, 0) rotate(0deg);
+    }
+    100% {
+        -webkit-transform:  translate(0, -2px) rotate(30deg);
+        transform:          translate(0, -2px) rotate(30deg);
+    }
+}
+
+@keyframes sendIMG {
+    0% {
+        -webkit-transform: translate(0, 0) rotate(30deg);
+        transform:         translate(0, 0) rotate(30deg);
+    }
+    30% {
+        -webkit-transform: translate(-5px, 2px) rotate(0deg);
+        transform:         translate(-5px, 2px) rotate(0deg);
+    }
+    75% {
+        opacity: 50%
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform:  translate(1000px, -500px) rotate(-30deg);
+        transform:          translate(1000px, -500px) rotate(-30deg);
     }
 }
