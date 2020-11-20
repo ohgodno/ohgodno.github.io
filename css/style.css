@@ -39,6 +39,7 @@ main p {
 }
 
 main a {
+    font-family: 'Lato', sans-serif !important;
     color: #006CE0 !important;
 }
 
@@ -610,12 +611,18 @@ br.desktop-only {
         -webkit-transform: translate(-5px, 2px) rotate(0deg);
         transform:         translate(-5px, 2px) rotate(0deg);
     }
+    50% {
+        -webkit-transform:  translate(100px, -20px) rotate(20deg);
+        transform:          translate(100px, -20px) rotate(20deg);
+    }
     75% {
-        opacity: 50%
+        opacity: 50%;
+        -webkit-transform:  translate(200px, -30px) rotate(-10deg);
+        transform:          translate(200px, -30px) rotate(-10deg);
     }
     100% {
         opacity: 0;
-        -webkit-transform:  translate(1000px, -500px) rotate(-30deg);
-        transform:          translate(1000px, -500px) rotate(-30deg);
+        -webkit-transform:  translate(1000px, -500px) rotate(-10deg);
+        transform:          translate(1000px, -500px) rotate(-10deg);
     }
 }
