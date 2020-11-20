@@ -410,17 +410,13 @@ br.desktop-only {
 }
 
 .contact-form button:hover img {
-    -webkit-animation: sendIMG 0.25s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    animation: hoverIMG 0.25s ease-in-out;
-    animation-fill-mode: forwards;
+    -webkit-animation: sendIMG 0.25s ease-in-out forwards;
+    animation: hoverIMG 0.25s ease-in-out forwards;
 }
 
 .contact-form button.clicked img {
-    -webkit-animation: sendIMG 2s ease-in-out;
-    -webkit-animation-fill-mode: forwards;
-    animation: sendIMG 2s ease-in-out;
-    animation-fill-mode: forwards;
+    -webkit-animation: sendIMG 2s ease-in-out forwards;
+    animation: sendIMG 2s ease-in-out forwards;
 }
 
 
