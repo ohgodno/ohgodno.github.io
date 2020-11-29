@@ -582,8 +582,11 @@ br.desktop-only {
 
 @media (prefers-reduced-motion: reduce) {
     main section {
-        transition: none;
+        transition: none !important;
         opacity: 1 !important;
+    }
+    .skip a {
+        transition: none !important;
     }
 }
 
