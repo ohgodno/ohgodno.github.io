@@ -155,6 +155,7 @@ footer .fab, .fas {
 
 main section {
     animation: fadein .5s ease-in forwards;
+    /* To make animation half as fast: change 0.5s to 1s, and double the values below  */
 }
 main section:nth-child(1) {
     animation-delay: .5s;
@@ -491,7 +492,7 @@ br.desktop-only {
     }
 }
 
-/* Normal Desktops 992->-1620px-> */
+/* Normal Desktops 992-->1620px */
 @media screen and (min-width: 992px) {
     nav {
         height: 60px;
@@ -538,10 +539,9 @@ br.desktop-only {
         text-align: left;
         margin-top: 0 !important;
     }
-
 }
 
-/* Small Devices 340-576px */
+/* Small Devices / Tablets 340-576px */
 @media screen and (max-width: 576px) {
     .tablet-only {
         display: none;
