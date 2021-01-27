@@ -420,20 +420,6 @@ br.desktop-only {
     animation: sendIMG 2s ease-in-out forwards;
 }
 
-
-.mapouter{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.mapouter iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
 /*Honeypot Field to trap bots*/
 .delicious-bee-juice {
     display: none;
