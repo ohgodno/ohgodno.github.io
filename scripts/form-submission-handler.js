@@ -51,6 +51,8 @@
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
 
+    if (honeypot) { return false; }
+
     return {data: formData, honeypot: honeypot};
   }
 
