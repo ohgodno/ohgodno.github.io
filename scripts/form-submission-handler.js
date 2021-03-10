@@ -62,20 +62,19 @@
     var form = event.target;
     var formData = getFormData(form);
     var data = formData.data;
-
+    disableAllButtons(form);
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
     // EDIT: I modified the honeypot to catch other scrapers
     if (!data) {
-      return false;
       document.querySelector('.gform').style.display = "none";
       var thankYouMessage = document.querySelector(".thankyou_message");
       if (thankYouMessage) {
         thankYouMessage.style.display = "block";
       }
+      return false;
     }
 
-    disableAllButtons(form);
     var url = form.action;
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
