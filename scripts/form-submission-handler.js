@@ -27,7 +27,7 @@
     var formData = {};
     fields.forEach(function(name){
       var element = elements[name];
-      
+
       // singular form elements just have one value
       formData[name] = element.value;
       // when our element has multiple items, get their values
@@ -66,8 +66,13 @@
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
     // EDIT: I modified the honeypot to catch other scrapers
-    if (formData.honeypot) {
+    if (!data) {
       return false;
+      document.querySelector('.gform').style.display = "none";
+      var thankYouMessage = document.querySelector(".thankyou_message");
+      if (thankYouMessage) {
+        thankYouMessage.style.display = "block";
+      }
     }
 
     disableAllButtons(form);
@@ -93,7 +98,7 @@
     xhr.send(encoded);
 
   }
-  
+
   function loaded() {
     // bind to the submit event of our form
     var forms = document.querySelectorAll("form.gform");
