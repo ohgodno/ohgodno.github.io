@@ -1,4 +1,4 @@
-// Code from:
+// Code from: 00
 // https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server
 // Modified by Harrison Crandall
 (function() {
@@ -50,8 +50,6 @@
     formData.formDataNameOrder = JSON.stringify(fields);
     formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
     formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
-
-    if (honeypot) { return false; }
 
     return {data: formData, honeypot: honeypot};
   }
