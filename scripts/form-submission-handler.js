@@ -66,7 +66,7 @@
 
     // If a honeypot field is filled, assume it was done so by a spam bot.
     // EDIT: I modified the honeypot to catch other scrapers
-    if (!data) {
+    if (formData.honeypot) {
       document.querySelector('.gform').style.display = "none";
       var thankYouMessage = document.querySelector(".thankyou_message");
       if (thankYouMessage) {
